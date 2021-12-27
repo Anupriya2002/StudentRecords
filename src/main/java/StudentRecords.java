@@ -4,7 +4,7 @@ import java.util.*;
 
 public class StudentRecords {
     public int capacity = 0;
-    public List<Student> studentRecords = new ArrayList<Student>();;
+    public List<Student> studentRecords = new ArrayList<Student>();
 
     public StudentRecords(int capacity){
         this.capacity = capacity;
@@ -41,11 +41,11 @@ public class StudentRecords {
 
         this.studentRecords.set(currentIndex, s);
     }
-
+    
     public String toString(){
         String toReturn = "\n";
         for(Student s : studentRecords){
-            toReturn += s + "\n";
+            toReturn += s.toString() + "\n";
         }
         return toReturn;
 
